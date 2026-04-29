@@ -26,3 +26,4 @@ networks:
 # créer un conteneur par cli:
 #     docker run --name my-html-app-v1 -d -p 8081:80 abdennour2021/my-html-app
 #http://127.0.0.1:82
+# certbot certonly --webroot -w /var/www/certbot -d masjid-nour.org -d www.masjid-nour.org
