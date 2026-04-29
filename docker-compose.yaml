@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dawanour2025/front-dep
+    container_name: front-dep
+    restart: always
+    ports:
+      - "82:82"
+    networks:
+      - data-nour
+#    depends_on:
+#      - secur-nour
+
+networks:
+  data-nour:
+    external: true
+    name: data-nour_default
+# créer une image par cli depuis un Dockerfile:
+#     docker build . -t abdennour2021/my-html-app
+# créer un conteneur par cli:
+#     docker run --name my-html-app-v1 -d -p 8081:80 abdennour2021/my-html-app
+#http://127.0.0.1:82
