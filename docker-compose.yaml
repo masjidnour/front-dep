@@ -18,7 +18,7 @@ services:
       - data-nour
 networks:
   data-nour:
-    driver: bridge
+    external: true
     # external: true
     # name: data-nour_default
 # créer une image par cli depuis un Dockerfile:
