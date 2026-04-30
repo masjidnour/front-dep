@@ -1,7 +1,7 @@
-FROM nginx:1.27-alpine
+FROM nginx:alpine
 
 COPY index.html /usr/share/nginx/html
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+# COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 80 443
-CMD ["nginx", "-g", "daemon off;"]
+# EXPOSE 80 443
+# CMD ["nginx", "-g", "daemon off;"]
