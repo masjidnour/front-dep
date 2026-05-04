@@ -19,7 +19,7 @@ services:
 networks:
   data-nour:
     external: true
-    # name: data-nour_default
+    name: data-nour_default
 # créer une image par cli depuis un Dockerfile:
 #     docker build . -t abdennour2021/my-html-app
 # créer un conteneur par cli:
