@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  web:
+  front-dep:
     build:
       context: .
       dockerfile: Dockerfile
